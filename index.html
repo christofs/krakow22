@@ -66,10 +66,12 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 ---
 ### Why care about sentence length? 
-* It is a proxy for syntactic complexity and one aspect of readability
-* It probably interacts with other features of texts, like narrator / character speech
-* It might vary also with first-person vs. third-person narration 
-* People have assumed a decline of sentence length for a long time
+* It is a proxy for syntactic complexity and one aspect of readability <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* It probably interacts with other features of texts, like narrator / character speech <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* It might vary also with first-person vs. third-person narration  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+* People have assumed a decline of sentence length for a long time <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
+  * but is it true, generally? 
+  * and specifically for different European literatures?
 
 
 ---
@@ -108,18 +110,18 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 ---
 ### How to establish average sentence length? 
-* Basic approach: establish number of tokens and number of sentences
-  * Either: Using level2 encoding, use @type="SENT" as marker of sentence boundaries
-  * Or: Using level1 encoding or plain text, use spacy tokenizer + sentencizer 
-  * Strong correlation between these two approaches
-  * See Viera, Picoli and Mendes 2018 for a comparison of approaches
-* Scatterplot: Novels by publication year and average sentence length
+* Basic approach: establish number of tokens and number of sentences <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Either: Using level2 encoding, use @type="SENT" as marker of sentence boundaries <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Or: Using level1 encoding or plain text, use language-specific spacy tokenizer + sentencizer  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+* Strong correlation between these two approaches <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
+* See Viera, Picoli and Mendes 2018 for a comparison of approaches <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="5" -->
+* Scatterplot: Novels by publication year and average sentence length <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="6" -->
 
 ---
 ### Test for significant difference
-* Equal-sized samples from early and later time slice
-* Density plot: for visual check of overlap and range
-* Significance test: Mann-Whitney-U-Test
+* Equal-sized samples from early and later time slice <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Density plot: for visual check of overlap and range <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Significance test: Mann-Whitney-U-Test <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 
 
 --
@@ -127,10 +129,10 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 ---
 ### What do I mean by 'Gutenberg Fiction'?
-* Sample from the Gutenberg Project Corpus
-* Downloaded using tool by Gerlach and Font-Clos 2018: 63.208 items
-* Filtered out everything except English-language narrative fiction: 18.738 texts
-* Established year of publication for many of them using several heuristics
+* Sample from the Gutenberg Project Corpus <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Downloaded using tool by Gerlach and Font-Clos 2018: 63.208 items <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Filtered out everything except English-language narrative fiction: 18.738 texts <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+* Established year of publication for many of them using several heuristics <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
   * Information from Wikidata
   * Information from Worldcat
   * Years of author's birth and death
@@ -154,7 +156,7 @@ Distant Reading Closing Conference, April 21-22, 2022
 <a href="img/results/Gutenberg-sample2b/avgsentlens+regression.png"><img height="300" data-src="img/results/Gutenberg-sample2b/avgsentlens+regression.png"></a><a href="img/results/Gutenberg-sample2b/comparison_1820-1839-vs-1920-1939.png"><img height="300" data-src="img/results/Gutenberg-sample2b/comparison_1820-1839-vs-1920-1939.png"></a>
 
 * Sample size: 1150 novels 
-* Longer period, stratified sample
+* Longer period, chronologically-stratified sample
 * Significant difference in average sentence length
 
 
@@ -181,7 +183,8 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 * Corpus size: 100 novels 
 * Standard period, quite even spread
-* Significant difference in average sentence length
+* Significant decline in average sentence length
+* Overall very similar to Gutenberg Fiction results
 
 
 
@@ -191,7 +194,7 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 * Corpus size: 100 novels 
 * Standard period, quite even spread
-* Significant difference in average sentence length
+* Significant decline in average sentence length
 
 
 ---
@@ -200,7 +203,7 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 * Corpus size: 100 novels 
 * Standard period, quite even spread
-* Significant difference in average sentence length
+* Significant decline in average sentence length
 
 
 ---
@@ -209,7 +212,7 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 * Corpus size: 100 novels 
 * Standard period, quite even spread
-* Significant difference in average sentence length
+* Significant decline in average sentence length
 
 
 ---
@@ -218,7 +221,7 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 * Corpus size: 100 novels 
 * Standard period, quite even spread
-* No difference in average sentence length (!)
+* No significant decline in average sentence length (!)
 
 
 ---
@@ -227,7 +230,7 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 * Corpus size: 1079 novels (fra + ext1 + ext2 + cligs-rv) 
 * Enlarged period, with gap, uneven spread
-* Significant difference in average sentence length
+* Significant decline in average sentence length
 
 
 --
@@ -235,9 +238,8 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 ::
 - Remember the results from the Hathi Trust dataset
-- The fiction declined in sentence lengh; 
-- The non-fiction did not
-- Could this be connected to the increasing amount of direct speech? 
+- The fiction declined in sentence lengh; the non-fiction did not
+- Could this be connected to the increasing amount of direct speech?
 
 
 ---
@@ -253,13 +255,6 @@ Distant Reading Closing Conference, April 21-22, 2022
 - Sample: 10 sentences from each of the 100 novels in ELTeC-fra
 
 ---
-### The case of French (2): per decade
-<a href="img/sentence-types_decades.svg"><img height="400" data-src="img/sentence-types_decades.svg"></a>
-
-* Proportion of speech type per decade
-* Some variation, but no clear trend
-
----
 ### The case of French (3): sentence length
 <a href="img/sentence-length-by-type.svg"><img height="400" data-src="img/sentence-length-by-type.svg"></a>
 
@@ -268,11 +263,11 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 
 ---
-### The case of German
-<a href="img/character-speech-DEU.png"><img height="400" data-src="img/character-speech-DEU.png"></a>
+### The case of French (2): per decade
+<a href="img/sentence-types_decades.svg"><img height="400" data-src="img/sentence-types_decades.svg"></a>
 
-* Data from Brunner 2013: 13 short stories, 1787-1913
-* Some suggestion of an increase in character speech
+* Proportion of speech type per decade
+* Some variation, but no clear trend
 
 
 --
@@ -280,19 +275,19 @@ Distant Reading Closing Conference, April 21-22, 2022
 
 ---
 ### Sentence length
-* Sentences do get shorter over time, at least: 
+* Sentences do get shorter over time, at least: <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" --> 
   * in novels / narrative fiction
   * for several languages
   * between 1840 and 1920
-* Further data needed for link to direct speech
+* Further data needed for link to direct speech <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
   * French: stable character speech proportion may explain stable sentence length
-  * German: (data?)
+  * German, English, Hungarian, Portuguese and many more: lack of data
 
 ---
 ### More general issues
-* We need larger datasets, including for the 20th century, in multiple languages
-* For existing larger datasets, we need much better metadata (publication data, narrative perspective, subgenre labels)
-* For ELTeC, annotation of character speech (or: modes of enunciation) would be important
+* We need larger datasets, including for the 20th century, in multiple languages <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* For existing larger datasets, we need much better metadata (publication data, narrative perspective, subgenre labels) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* For ELTeC, annotation of character speech (or: modes of enunciation) would be important <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 
 
 ---
